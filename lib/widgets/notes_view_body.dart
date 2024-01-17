@@ -16,8 +16,8 @@ class NotesViewBody extends StatelessWidget {
             height: 40,
           ),
           CustomAppBar(
-            text: 'Edit',
-            iconData: FontAwesomeIcons.trash,
+            text: 'Notes',
+            iconData: Icons.search,
           ),
           Expanded(
             child: NotesListView(),
