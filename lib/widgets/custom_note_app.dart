@@ -5,7 +5,7 @@ import 'package:notes_app/views/edit_note_view.dart';
 
 class CustomNoteItem extends StatelessWidget {
   const CustomNoteItem({super.key, required this.note});
-final NoteModel note;
+  final NoteModel note;
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -22,16 +22,16 @@ final NoteModel note;
       child: Container(
         padding: const EdgeInsets.only(top: 24, bottom: 24, left: 16),
         decoration: BoxDecoration(
-          color:  Color(note.color),
+          color: Color(note.color),
           borderRadius: BorderRadius.circular(16),
         ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.end,
           children: [
             ListTile(
-              title:  Text(
+              title: Text(
                 note.title,
-                style:const TextStyle(
+                style: const TextStyle(
                   fontSize: 28,
                   color: Colors.black,
                 ),
@@ -50,11 +50,13 @@ final NoteModel note;
                 ),
               ),
               trailing: IconButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    note.delete();
+                  },
                   icon: const Icon(
-                    FontAwesomeIcons.trash,
+                    Icons.delete,
                     color: Colors.black,
-                    size: 24,
+                    size: 32,
                   )),
             ),
             Padding(
