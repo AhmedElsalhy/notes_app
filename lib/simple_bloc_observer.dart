@@ -1,8 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-class SimpleBlocObServer implements BlocObserver
-{
+class SimpleBlocObServer implements BlocObserver {
   @override
   void onChange(BlocBase bloc, Change change) {
     debugPrint("change = $change");
@@ -32,5 +31,4 @@ class SimpleBlocObServer implements BlocObserver
   void onTransition(Bloc bloc, Transition transition) {
     // TODO: implement onTransition
   }
-
 }

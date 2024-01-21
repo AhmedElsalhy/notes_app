@@ -18,7 +18,7 @@ class CustomTextField extends StatelessWidget {
           return null;
         }
       },
-      onChanged:onChanged ,
+      onChanged: onChanged,
       onSaved: onSaved,
       maxLines: maxLines,
       cursorColor: kPrimaryColor,

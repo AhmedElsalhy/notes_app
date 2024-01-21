@@ -5,7 +5,8 @@ class CustomAppBar extends StatelessWidget {
   const CustomAppBar({
     super.key,
     required this.text,
-    required this.iconData, this.onPressed,
+    required this.iconData,
+    this.onPressed,
   });
   final String text;
   final IconData iconData;
